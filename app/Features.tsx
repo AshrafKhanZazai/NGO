@@ -2,50 +2,96 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+// const ProjectsData = [
+//   {
+//     id: 1,
+//     name: 'Education',
+//     description: ' Provides literacy programs, teacher training, and educational publications to enhance learning opportunities.',
+//     // link: '#',
+//     image: 'https://ansubkhan.com/images/projects/syntaxUI.svg',
+//   },
+//   {
+//     id: 2,
+//     name: 'Health Services',
+//     description: 'Offers basic healthcare, health awareness campaigns, and medical support for communities.',
+//     // link: '#',
+//     image: 'https://ansubkhan.com/images/projects/prettyfolio.png',
+//   },
+//   {
+//     id: 3,
+//     name: 'Vocational Training',
+//     description: 'Equips youth and women with job skills to improve employability and economic independence.',
+//     // link: '/#',
+//     image: 'https://ansubkhan.com/images/projects/enchant.png',
+//   },
+//   {
+//     id: 4,
+//     name: 'Emergency Relief',
+//     description: 'Provides food, cash assistance, and essential supplies to vulnerable families in crisis situations.',
+//     // link: '#',
+//     image: 'https://ansubkhan.com/images/projects/portfolio.png',
+//   },
+//   {
+//     id: 5,
+//     name: 'Livelihood Support',
+//     description: ' Implements agricultural and economic programs to improve food security and income generation.',
+//     // link: '#',
+//     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
+//   },
+//   {
+//     id: 6,
+//     name: 'Human Rights Awareness',
+//     description: 'Conducts legal education and awareness programs to promote rights and peacebuilding.',
+//     // link: '#',
+//     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
+//   },
+// ]
+
 const ProjectsData = [
   {
     id: 1,
     name: 'Education',
-    description: ' Provides literacy programs, teacher training, and educational publications to enhance learning opportunities.',
-    // link: '#',
+    description: 'Provides literacy programs, teacher training, and educational publications to enhance learning opportunities.',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/syntaxUI.svg',
   },
   {
     id: 2,
     name: 'Health Services',
     description: 'Offers basic healthcare, health awareness campaigns, and medical support for communities.',
-    // link: '#',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/prettyfolio.png',
   },
   {
     id: 3,
     name: 'Vocational Training',
     description: 'Equips youth and women with job skills to improve employability and economic independence.',
-    // link: '/#',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/enchant.png',
   },
   {
     id: 4,
     name: 'Emergency Relief',
     description: 'Provides food, cash assistance, and essential supplies to vulnerable families in crisis situations.',
-    // link: '#',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/portfolio.png',
   },
   {
     id: 5,
     name: 'Livelihood Support',
-    description: ' Implements agricultural and economic programs to improve food security and income generation.',
-    // link: '#',
+    description: 'Implements agricultural and economic programs to improve food security and income generation.',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
   },
   {
     id: 6,
     name: 'Human Rights Awareness',
     description: 'Conducts legal education and awareness programs to promote rights and peacebuilding.',
-    // link: '#',
+    links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
   },
-]
+];
+
 
 const HoverSpring = () => {
   return (
