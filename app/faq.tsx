@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
+import {
+  Typography,
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
-import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 const FAQS = [
   {
     title: "What is DAPSSO?",
@@ -37,7 +42,6 @@ const FAQS = [
   },
 ];
 
-
 export function Faq() {
   const [open, setOpen] = React.useState(0);
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
@@ -46,13 +50,24 @@ export function Faq() {
     <section className="px-8 mt-32">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          {/* Ensure all required props are provided */}
+          <Typography
+            variant="h1"
+            color="blue-gray"
+            className="mb-4"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             Frequently Asked Questions
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 w-full max-w-2xl !text-gray-500"
-          >
+            placeholder=""
+            onPointerEnterCapture={() => { } }
+            onPointerLeaveCapture={() => { } } children={undefined}          >
+            {/* Optionally add a subtitle or description here */}
           </Typography>
         </div>
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
@@ -60,15 +75,20 @@ export function Faq() {
             <Accordion
               key={key}
               open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
-            >
-              <AccordionHeader className="text-left text-gray-900">
+              onClick={() => handleOpen(key + 1)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+              <AccordionHeader className="text-left text-gray-900" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {title}
               </AccordionHeader>
               <AccordionBody>
                 <Typography
                   color="blue-gray"
                   className="font-normal text-gray-500"
+                  // If Typography here doesn’t require these props,
+                  // you might not need to supply them. But if TypeScript complains,
+                  // you can add them too:
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   {desc}
                 </Typography>
@@ -80,6 +100,5 @@ export function Faq() {
     </section>
   );
 }
-
 
 export default Faq;
