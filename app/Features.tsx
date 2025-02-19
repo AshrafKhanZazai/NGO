@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link';
 
 // const ProjectsData = [
 //   {
@@ -148,7 +149,7 @@ const HoverSpring = () => {
           key={project.id}
           className="mt-5 text-left"
         >
-          <a target="_blank" rel="noopener noreferrer" href={project.links}>
+          <Link target="_blank" rel="noopener noreferrer" href={project.links}>
             <Image
               src={project.image}
               width={30}
@@ -162,7 +163,7 @@ const HoverSpring = () => {
             <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
               {project.description}
             </div>
-          </a>
+          </Link>
         </motion.div>
       );
     })}
