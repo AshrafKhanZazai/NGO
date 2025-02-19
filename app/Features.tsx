@@ -80,7 +80,7 @@ const ProjectsData = [
   {
     id: 5,
     name: 'Livelihood Support',
-    description: 'Implements agricultural and economic programs to improve food security and income generation.',
+    description: 'Implements agricultural and economic programs to improve food security and income generation',
     links: '#', // ✅ Added links property
     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
   },
@@ -88,7 +88,7 @@ const ProjectsData = [
     id: 6,
     name: 'Human Rights Awareness',
     description: 'Conducts legal education and awareness programs to promote rights and peacebuilding.',
-    links: '#', // ✅ Added links property
+    links: '#',
     image: 'https://ansubkhan.com/images/projects/quote-vault.png',
   },
 ];
